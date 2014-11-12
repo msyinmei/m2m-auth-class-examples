@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'students#index'
   ## STUDENTS ROUTES
 
   get 'students', to: "students#index", as: 'students'
