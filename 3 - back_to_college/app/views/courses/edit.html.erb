@@ -17,5 +17,10 @@
     <%= f.submit("Add", class: "btn btn-primary ")%>
   <% end %>
   <br>
+  <%= form_for(@course, url: course_path(@course.id), method: "delete") do |f|%>
+    <%= f.submit("Delete", class: "btn btn-primary ")%>
+  <% end %>
+  <br>
+
   <%= link_to "See courses", courses_path %>
   </div>
